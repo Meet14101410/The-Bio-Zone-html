@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>The Bio Zone</title>
+</head>
+<body>
+
+    <h1>The Bio Zone 🧬</h1>
+    <p>Welcome to The Bio Zone! Test your biology knowledge.</p>
+
+    <h3>Question:</h3>
+    <p>What is the powerhouse of the cell?</p>
+
+    <button onclick="checkAnswer('A')">A) Nucleus</button>
+    <button onclick="checkAnswer('B')">B) Mitochondria</button>
+    <button onclick="checkAnswer('C')">C) Ribosome</button>
+
+    <p id="result"></p>
+
+    <script>
+        function checkAnswer(answer) {
+            if(answer === 'B') {
+                document.getElementById("result").innerHTML = "Correct!";
+            } else {
+                document.getElementById("result").innerHTML = "Wrong! Try again.";
+            }
+        }
+    </script>
+
+</body>
+</html>
